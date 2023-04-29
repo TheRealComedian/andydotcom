@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Andy';
+    src: url('fonts/design.graffiti.ANDYB.ttf');
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+/* || General Styles */
+body {
+    margin: 0;
+    font-family: "Andy", 'Brush Script MT', "Lucidia Handwriting", cursive;
+}
+
+.container {
+    width: 80%;
+    /* max-width: 1100px; */
+    margin: auto;
+}
+
+/* || Header */
+header {
+    /* gap: 0.5em; */
+    /* height: 13%; */
+    /* padding: 0.5em; */
+
+    position: sticky;
+    top:0px;
+    background-color: palevioletred;
+    padding: 0.3em 0;
+}
+header .row {
+    align-items: end;
+    justify-content: space-between;
+}
+.header__logo {
+    /* border: 5px solid lime; */
+    width: fit-content;
+}
+.header__nav {
+    /* border: 5px solid cyan; */
+    width: fit-content;
+}
+header img:hover,
+header button:hover {
+    background-color: rgb(213, 73, 120);
+}
+header img {
+    max-height:90px;
+}
+header button {
+    border: none;
+    background-color: unset;
+    /* width: 15%; */
+    
+    font: 3vw Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.header__logo button {
+    /* width: 35%; */
+    color: darkblue;
+    /* font-size: 6vh; */
+    /* margin-right: auto; */
+}
+
+
+
+/* || Home */
+#home[show=false] {
+    display: none;
+}
+#home[show=true] {
+    display: block;
+    margin: 1em;
+
+    text-align: center;
+}
+#home img {
+    height: 75%;
+}
+
+
+
+/* || Info */
+#info[show=false] {display: none;}
+#info[show=true] {
+    margin: 1em;
+    display: flex;
+    flex-wrap: wrap;
+}
+.infoSection {
+    border: 2px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 1em;
+    
+}
+.infoSection:hover {border-color: gray;}
+
+
+/* || Top 10 Andy */
+#topTen[show=false] {display: none;}
+#topTen[show=true] {
+    display: unset;
+}
+
+.topAndy {
+    margin: 0.4em;
+    border: 2px solid #cfcfcf;
+    border-radius: 8px;
+    padding: 0.4em;
+    height: 6em;
+    font-size: 3rem;
+}
+#topTen span {
+    display: flex;
+    margin: 1em;
+    width: auto;
+}
+#topTen span button {
+    margin: auto;
+    border: 2px solid #deacb4;
+    border-radius: 8px;
+    background-color: #f0c5cc;
+    height: 3em;
+    width: 45%;
+
+    font: inherit;
+    color:#3b013c;
+
+}
+#topTen span button:hover {
+    border-color: #eb8596;
+    background-color: #ebaab5;
+}
+
+
+/* || Popup */
+#popup {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(255, 244, 27);
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.popup-face {
+    padding: 2em;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#popup .close {
+    position: absolute;
+    top: 10;
+    right: 10;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    padding: 0.8em;
+}
+#popup h1, h2 {
+    width: fit-content;
+}
+.notascam {
+    /* border: 2px solid lime; */
+    height: 1.5em;
+    width: 70%;
+
+    display: flex;
+}
+.notascam p{
+    display: inline;
+    /* border: 2px solid magenta; */
+    width: 80%;
+}
+.notascam a {
+    display: inline;
+    /* border: 2px solid red; */
+    height: 100%;
+    width: 100%;
+}
+.notascam img {
+    height: 100%;
+    width: 100%;
+    /* border: 2px solid blue; */
+}
+
+
+/* others */
+.textbox-col {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+.image-col {
+    max-width: 40%;
+}
+.image-col > img {
+    max-width: 340px;
+    height: 100%;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.grid-col {
+    width: 50%;
+    display: flex;
+    border: 2px solid lime;
+}
+
+.row {
+    display: flex;
+}
+
+.hidden {
+    display: none !important;
+}

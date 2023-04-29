@@ -1,0 +1,181 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        
+        <link rel="stylesheet" href="app.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Andy">
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container row">
+                <div class="header__logo">
+                    <img src="images\andyLogo.png" alt="logo"> 
+                    <button onclick="showPageContent('home')">Andy Dot Com</button>
+                </div>
+                <nav class="header__nav">
+                    <button onclick="showPageContent('topTen')">Top 10 Andy</button>
+                </nav>
+            </div>
+        </header>
+
+        <div id="home" class="pageContent" show="true" onmouseover="initPopup()">
+            <div class="container">
+                <h1>ANDREW SAMUEL NICKELS</h1>
+                <img src="images\andy-jimmy2.jpg" alt="Andy">
+                <h1>WHO IS HE?</h1>
+                <img src="images\sus.jpg" alt="Andy">
+                <h1>WHERE IS HE?</h1>
+                <img src="images\house.jpg" alt="Andy">
+                <h1>WHERE IS HE GOING?</h1>
+                <img src="images\india.jpg" alt="Andy">
+                <h1>WHAT WILL HE DO WHEN HE GETS THERE?</h1>
+                <img src="images\indiaMap.png" alt="Andy">
+            </div>
+        </div>
+
+        <div id="topTen" class="pageContent" show="false">
+            <div class="container">
+                <section class="topAndy" id="andy0" style="display: flex;">
+                    <h2>TOP 10 ANDY</h2>
+                </section>
+                <section class="topAndy" id="andy10" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-glasses.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #10</h2>
+                        <p>
+                            Andy with Glasses
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy9" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-cool.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #9</h2>
+                        <p>
+                            Cool Andy
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy8" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-wicked.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #8</h2>
+                        <p>
+                            Wicked Andy
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy7" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-jimmy.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #7</h2>
+                        <p>
+                            Jimmy
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy6" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-takeit.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #6</h2>
+                        <p>
+                            Magnanimous Andy
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy5" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-reading.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #5</h2>
+                        <p>
+                            Andy enjoying some light reading at Half Price Books
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy4" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-walter.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #4</h2>
+                        <p>
+                            Andy cooking
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy3" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-wad.png" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #3</h2>
+                        <p>
+                            Andy with The Wad
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy2" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-suit.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #2</h2>
+                        <p>
+                            Andy Fashion
+                        </p>
+                    </div>
+                </section>
+                <section class="topAndy" id="andy1" style="display: none;" >
+                    <div class="image-col">
+                        <img src="./images/andy-recording.jpg" alt="">
+                    </div>
+                    <div class="textbox-col">
+                        <h2>Andy #1</h2>
+                        <p>
+                            they found him
+                        </p>
+                    </div>
+                </section>
+        
+                <span>
+                    <!-- <button onclick="">Previous</button> -->
+                    <button onclick="topTenAndy('next')">Next</button>
+                </span>
+        
+                
+            </div>
+        </div>
+
+        <div id="popup" class="hidden">
+            <div class="popup-face">
+                <h1>A VIRUS HAS BEEN DETECTED ON YOUR SYSTEM. TRY THIS ACTUAL ANTIVIRUS SOFTWARE TO FIX THE COMPUTER (FREE)</h1>
+                <span class="notascam">
+                    <p >click here to </p>
+                    <a href="./dist.zip" download="zip-bomb.zip">
+                        <img src="./images/download.webp" alt="">
+                    </a>
+                </span>
+                <button onclick="closePopup()" class="close">X</button>
+            </div>
+            
+        </div>
+    </body>
+</html>
+
+<!-- no one will believe you :) -->
